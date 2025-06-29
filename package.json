@@ -1,0 +1,133 @@
+{
+  "name": "git-account-manager",
+  "displayName": "Git Account Manager",
+  "description": "A simple yet powerful VS Code extension for toggling between multiple Git identities. Perfect for developers juggling personal and work profiles — switch, commit, and push without ever touching your terminal.",
+  "publisher": "99sharmatushar",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "SCM Providers"
+  ],
+  "keywords": [
+    "git",
+    "account manager",
+    "multiple git accounts",
+    "git identity",
+    "git profile switcher",
+    "git profile manager",
+    "git account switcher",
+    "git config",
+    "user.name",
+    "user.email",
+    "git username",
+    "git email",
+    "git accounts",
+    "manage git profiles",
+    "switch git account",
+    "change git identity",
+    "git developer identity",
+    "git multi-account",
+    "git account selector",
+    "developer tool",
+    "vscode git extension",
+    "version control",
+    "source control",
+    "scm",
+    "username",
+    "email",
+    "ssh key",
+    "configuration",
+    "github",
+    "git multiple users",
+    "git user switcher",
+    "git user changer",
+    "git account switch",
+    "git user management",
+    "git user configuration",
+    "git user selection",
+    "multiple git identities",
+    "switch git profiles",
+    "change git user",
+    "git user selector",
+    "git identity switch"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "gitProfileContainer",
+          "title": "Git Account Manager",
+          "icon": "media/git-icon.svg"
+        }
+      ]
+    },
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "gitProfileSwitcher.deleteProfile",
+          "when": "view == gitProfiles && viewItem == profile",
+          "group": "inline"
+        }
+      ]
+    },
+    "views": {
+      "gitProfileContainer": [
+        {
+          "id": "gitProfiles",
+          "name": ""
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "gitProfileSwitcher.switchProfile",
+        "title": "GitAccountManager: Switch Profile"
+      },
+      {
+        "command": "gitProfileSwitcher.addProfile",
+        "title": "GitAccountManager: Add New Profile"
+      },
+      {
+        "command": "gitProfileSwitcher.deleteProfile",
+        "title": "🗑️Delete"
+      },
+      {
+        "command": "gitProfileSwitcher.refresh",
+        "title": "Refresh 🔃"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "esbuild": "^0.25.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
