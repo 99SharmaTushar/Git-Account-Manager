@@ -30,7 +30,7 @@
 
 ## Screenshots
 
-![Sidebar View](https://github.com/user-attachments/assets/14633231-da45-47ff-b270-809916b81ffb)
+![Sidebar View](media/sidepanel.png)
 
 ---
 

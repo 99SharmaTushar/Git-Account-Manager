@@ -3,7 +3,7 @@
   "displayName": "Git Account Manager",
   "description": "A simple yet powerful VS Code extension for toggling between multiple Git identities. Perfect for developers juggling personal and work profiles — switch, commit, and push without ever touching your terminal.",
   "publisher": "99sharmatushar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.100.0"
   },
