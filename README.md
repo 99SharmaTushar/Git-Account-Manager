@@ -10,7 +10,7 @@
 
 ## Features
 
-- Switch between Git profiles (name + email)
+- Switch between Git profiles
 - Add new profiles with simple input prompts
 - Delete profiles
 - Applies changes globally
@@ -30,7 +30,7 @@
 
 ## Screenshots
 
-![Sidebar View](https://github.com/user-attachments/assets/3486dc4d-e97c-4018-9996-9dca7db97fa2)
+![Sidebar View](https://github.com/user-attachments/assets/14633231-da45-47ff-b270-809916b81ffb)
 
 ---
 

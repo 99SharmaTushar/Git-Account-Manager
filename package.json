@@ -57,6 +57,10 @@
     "onStartupFinished"
   ],
   "main": "./dist/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/99SharmaTushar/Git-Account-Manager"
+  },
   "contributes": {
     "viewsContainers": {
       "activitybar": [
